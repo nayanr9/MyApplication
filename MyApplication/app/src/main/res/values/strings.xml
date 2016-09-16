@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">Hello world! 2nd time </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_next">next</string>
+    <string name="title_activity_next2">next2</string>
+</resources>
