@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Splitwise</string>
+    <string name="action_settings">Settings</string>
+    <string name="img">img</string>
+    <string name="head_img">head_img</string>
+</resources>
