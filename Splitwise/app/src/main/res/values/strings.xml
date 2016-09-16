@@ -3,4 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="img">img</string>
     <string name="head_img">head_img</string>
+    <string name="img_btn">img_btn</string>
+    <string name="group">group</string>
+    <string name="group_name">Group Name</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.rajnayan.splitwise;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,8 +9,28 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    public ImageButton img_btn;
+
+    public void addGroup(){
+        img_btn = (ImageButton) findViewById(R.id.imageButton);
+        img_btn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+
+                Intent addGroup = new Intent(MainActivity.this, addGroup.class);
+                startActivity(addGroup);
+
+            }
+        });
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,14 +39,20 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        addGroup();
+
+//        img_btn = (ImageButton) findViewById(R.id.imageButton);
+//
+//
+//
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MainActivity.this, "here we will add the group", Toast.LENGTH_SHORT).show();
+//            }
+//
+//            });
+
+
     }
 
     @Override
